@@ -1,0 +1,3 @@
+2026-05-21T13:25:44Z service=public-api env=production level=WARN status=429 endpoint=/v1/batch-sync message="Too many requests" request_count=1250 limit=1000 customer="CloudBridge Apps"
+2026-05-21T13:26:02Z service=public-api env=production level=WARN status=429 endpoint=/v1/batch-sync message="Rate limit exceeded" request_count=1288 limit=1000 customer="CloudBridge Apps"
+2026-05-21T13:27:36Z service=public-api env=production level=INFO status=200 endpoint=/v1/batch-sync message="Request allowed after backoff" customer="CloudBridge Apps"

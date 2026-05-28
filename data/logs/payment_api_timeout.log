@@ -1,0 +1,3 @@
+2026-05-21T12:41:02Z service=payment-api env=production level=ERROR status=504 endpoint=/v1/payments message="Gateway timeout" latency_ms=30120 customer="FinEdge Systems"
+2026-05-21T12:42:15Z service=payment-api env=production level=ERROR status=504 endpoint=/v1/checkout message="Upstream payment processor timeout" latency_ms=28975 customer="FinEdge Systems"
+2026-05-21T12:43:08Z service=payment-api env=production level=CRITICAL status=504 endpoint=/v1/payments message="Repeated timeout detected" latency_ms=31244 customer="FinEdge Systems"

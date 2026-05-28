@@ -1,0 +1,3 @@
+2026-05-21T14:05:12Z service=integration-sync env=production level=ERROR job=crm-sync message="Record sync failed" reason="invalid_field_mapping" failed_records=42 customer="OrbitCRM"
+2026-05-21T14:06:09Z service=integration-sync env=production level=WARN job=crm-sync message="Partial sync completed" synced_records=958 failed_records=42 customer="OrbitCRM"
+2026-05-21T14:07:44Z service=integration-sync env=production level=ERROR job=crm-sync message="Field mapping validation failed" field="customer_status" customer="OrbitCRM"
