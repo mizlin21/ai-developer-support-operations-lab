@@ -30,6 +30,12 @@ while keeping humans responsible for high-trust decisions.
 
 ---
 
+# Architecture
+
+The AI Developer Support Operations Lab is organized as a deterministic operational pipeline. Each stage produces structured outputs that become inputs for the next stage, enabling evidence preservation, operational traceability, and governance-aware decision support.
+
+---
+
 # Core Areas of the Lab
 
 This project simulates:
@@ -44,6 +50,38 @@ This project simulates:
 - support analytics
 - engineering handoff systems
 - governance-aware AI operations
+
+---
+
+# Features
+
+The AI Developer Support Operations Lab includes:
+
+- Ticket classification and triage
+- Operational log analysis
+- Root cause identification
+- Knowledge base retrieval
+- Engineering handoff generation
+- Support operations metrics
+- Governance audit summaries
+- Human review controls
+- AI usage governance
+- Risk management documentation
+
+---
+
+# Repository Highlights
+
+This project demonstrates:
+
+- End-to-end operational workflow design
+- Evidence-first troubleshooting
+- Deterministic AI-assisted decision support
+- Engineering escalation workflows
+- Operational metrics generation
+- Governance-aware AI operations
+- Human-in-the-loop review
+- Enterprise-style technical documentation
 
 ---
 
@@ -64,34 +102,92 @@ It does not silently control them.
 
 ---
 
-# Planned System Workflow
+# System Workflow
 
 ```text
-Developer/User
+Support Ticket
       ↓
-Support Ticket Intake
+Classification Engine
       ↓
-AI Classification Engine
-      ↓
-Log & Error Analysis
+Troubleshooting Engine
       ↓
 Knowledge Base Retrieval
       ↓
-Suggested Resolution
-      ↓
-Escalation Logic
-      ↓
 Engineering Handoff
       ↓
-Operational Metrics & Reporting
+Operations Metrics
+      ↓
+Governance Audit Summary
 ```
 
-# Planned Project Structure
+---
+
+# Project Structure
+
+```text
 data/
+├── tickets/
+├── logs/
+├── kb/
+└── outputs/
+
 docs/
+├── governance/
+├── portfolio-showcase.md
+├── architecture-overview.md
+├── demo-walkthrough.md
+└── recruiter-quickstart.md
+
 src/
+├── classification/
+├── troubleshooting/
+├── retrieval/
+├── escalation/
+├── analytics/
+└── utils/
+
 tests/
+
 evidence/
+```
+
+---
+
+# How To Run
+
+Run the full operational pipeline:
+
+```powershell
+python -m src.classification.classifier
+python -m src.troubleshooting.log_analyzer
+python -m src.retrieval.retriever
+python -m src.escalation.handoff_generator
+python -m src.analytics.metrics_generator
+python -m src.utils.governance_audit_summary
+```
+
+Generated outputs will be stored in:
+
+```text
+data/outputs/
+```
+
+---
+
+# Outputs
+
+The pipeline generates:
+
+| Output                        | Purpose                          |
+| ----------------------------- | -------------------------------- |
+| classified_tickets.json       | Ticket classification results    |
+| troubleshooting_findings.json | Log analysis findings            |
+| retrieval_results.json        | Knowledge base retrieval results |
+| engineering_handoffs.json     | Engineering escalation records   |
+| operations_metrics.json       | Operational analytics            |
+| governance_audit_summary.json | Governance review requirements   |
+
+---
 
 # Governance Focus
 
@@ -111,6 +207,94 @@ while maintaining:
 - operational visibility
 - human oversight
 
+---
+
+# Governance Layer
+
+The project includes a dedicated governance framework consisting of:
+
+- Governance Model
+- Audit Controls
+- Risk Register
+- Human Review Policy
+- Governance Audit Summary
+
+These controls help ensure that AI-assisted outputs remain:
+
+- explainable
+- auditable
+- evidence-based
+- reviewable
+- human-supervised
+
+---
+
+# Documentation Guide
+
+Recommended reading order:
+
+1. portfolio-showcase.md
+2. architecture-overview.md
+3. demo-walkthrough.md
+4. governance documentation
+
+These documents explain the architecture, workflow design, governance model, and operational philosophy of the project.
+
+---
+
+# Skills Demonstrated
+
+- Python
+- JSON data processing
+- Operational workflow design
+- AI governance concepts
+- Support operations
+- Log analysis
+- Escalation management
+- Retrieval workflows
+- Technical documentation
+- Human-in-the-loop AI systems
+- Operational analytics
+- Enterprise workflow architecture
+- Python application architecture
+- Operational documentation
+- AI governance
+- Auditability
+- Risk management
+
+---
+
+# Intended Roles
+
+This project aligns with:
+
+- AI Support Engineer
+- Developer Support Engineer
+- Technical Solutions Engineer
+- Platform Support Engineer
+- AI Operations Engineer
+- Junior Solutions Architect
+- AI Governance Analyst
+- Technical Support Operations
+
+---
+
+# Future Improvements
+
+Potential future enhancements include:
+
+- LLM-powered ticket classification
+- Vector-based knowledge retrieval
+- Real ticketing system integrations
+- Dashboard visualizations
+- Workflow approval systems
+- Automated evidence collection
+- Expanded governance reporting
+
+---
+
 # Status
 
-Project currently in active development.
+Core functionality is complete.
+
+Current development focuses on portfolio refinement, documentation improvements, and future feature enhancements.
